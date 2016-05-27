@@ -29,8 +29,8 @@ grunt
 mv * /var/www
 
 #Cleanup env
-apt-get remove -y -q curl git npm
-
+apt-get autoremove -y -q curl git
+apt-get clean
 
 # FREEBOARD=/var/www/freeboard
 # mkdir -m 755 -p $FREEBOARD
