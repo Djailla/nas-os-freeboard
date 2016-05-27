@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+sed -i "s/Listen 127.0.0.1:[0-9]*/Listen 127.0.0.1:$RAINBOW_PORT_WEB_UI/" /etc/apache2/ports.conf
+service apache2 $1
+exit 0

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+source /scripts/update_apache_conf.sh
+exit 0
