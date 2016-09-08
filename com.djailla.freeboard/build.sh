@@ -10,7 +10,7 @@ apt-get install -y -q curl git
 if [ $RAINBOW_ARCHITECTURE = "x86_64" ]
 then
     # Install nodejs components
-    curl -sL https://deb.nodesource.com/setup_5.x | bash -
+    curl -sL https://deb.nodesource.com/setup_6.x | bash -
     apt-get install -y -q nodejs npm
 else
     echo "ARM"
@@ -20,7 +20,7 @@ npm install -g grunt-cli
 
 # Checkout sources in /opt
 cd /opt/freeboard/
-git clone https://github.com/Freeboard/freeboard.git
+git clone --depth=1 https://github.com/Freeboard/freeboard.git
 
 # Install the component
 cd freeboard
